@@ -1,4 +1,4 @@
-# Zaika - Food Delivery Platform 🚀
+# Swaadisht - Food Delivery Platform 🚀
 
 ![Zaika](./logos/Screenshot.png)
 
@@ -21,6 +21,7 @@ Explore Zaika live: [Zaika Live](https://zaika-foods.onrender.com/)
 - **Fast Delivery:** Find restaurants prioritizing swift and efficient delivery services.
 
 - **Budget-Friendly Choices:**
+
   - Less than ₹300: Explore economical options.
   - ₹300 - ₹600 Range: Discover a variety of choices within this budget range.
 
@@ -58,4 +59,5 @@ Explore Zaika live: [Zaika Live](https://zaika-foods.onrender.com/)
 4. Run `npm start` to start the development server.
 
 ## Contribution
+
 Feel free to contribute to this project by opening issues or creating pull requests. Your feedback and contributions are highly appreciated!
