@@ -29,7 +29,7 @@ const RestaurantCard = (props) => {
                       ? ` ${aggregatedDiscountInfoV3.subHeader}`
                       : ""
                   }`
-                : "Flat Rs. 49 OFF"}
+                : "Flat Rs. 50% OFF"}
             </p>
           </div>
         </span>
@@ -47,14 +47,7 @@ const RestaurantCard = (props) => {
             <p className="p2">{costForTwo}</p>
           </div>
           <div className="time">
-            <p>{sla.deliveryTime} min</p>
-          </div>
-          <div className="line"></div>
-          <div className="covid">
-            <div className="covid-img">
-              <img src={COVID_URL} alt="Covid img" />
-            </div>
-            <p>Follows all Max Safety measures to ensure your food is safe</p>
+            <p>{sla.deliveryTime}min</p>
           </div>
         </span>
       </div>

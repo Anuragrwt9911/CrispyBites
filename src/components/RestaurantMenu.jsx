@@ -12,8 +12,8 @@ const RestaurantMenu = () => {
   console.log(restInfo);
 
   useEffect(() => {
-    window.scrollTo(0, 0)
-  }, [resId])
+    window.scrollTo(0, 0);
+  }, [resId]);
 
   if (restInfo === null) {
     return <ResMenuShimmer />;
@@ -41,7 +41,7 @@ const RestaurantMenu = () => {
   } = resBasicInfo;
 
   const categories =
-  categoryCards[0]?.groupedCard?.cardGroupMap?.REGULAR?.cards.filter(
+    categoryCards[0]?.groupedCard?.cardGroupMap?.REGULAR?.cards.filter(
       (c) =>
         c.card?.card?.["@type"] ===
         "type.googleapis.com/swiggy.presentation.food.v2.ItemCategory"

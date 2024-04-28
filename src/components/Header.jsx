@@ -102,7 +102,7 @@ const Header = () => {
             <li>
               <Link className="h-item" to={"/about"}>
                 <span>
-                  <i className="fa-brands fa-react"></i>
+                  <i class="fa-solid fa-circle-info"></i>
                 </span>{" "}
                 About
               </Link>

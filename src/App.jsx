@@ -19,7 +19,7 @@ import CityContext from "./utils/CityContext";
 const Grocery = lazy(() => import("./components/Grocery"));
 
 const AppLayout = () => {
-  //Location Context ----------------------------
+  //Location Context -------------------------
   const [location, setLocation] = useState({
     latitude: 12.9716,
     longitude: 77.5946,
@@ -61,6 +61,7 @@ const AppLayout = () => {
                 duration: 1500,
               }}
             />
+
             <Header />
             <Outlet />
             <Footer />
