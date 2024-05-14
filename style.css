@@ -23,7 +23,42 @@ body {
   top: 0;
   width: 100%;
   z-index: 100;
-  background-color: #fff;
+}
+.theme-btn {
+  position: relative;
+  left: 160%;
+  top: 50%;
+  color: black;
+  font-size: 17px;
+  font-weight: 450;
+}
+
+/* Light Theme Styles */
+.light-theme {
+  background-color: white;
+  color: white;
+}
+
+.light-theme .nav-items {
+  /* Light theme specific styles for nav-items */
+  color: #333; /* Example color */
+}
+
+/* Dark Theme Styles */
+.dark-theme {
+  background-color: #333;
+  color: white;
+}
+
+.dark-theme .nav-items {
+  /* Dark theme specific styles for nav-items */
+  color: white; /* Example color */
+}
+
+/* Other Header Styles */
+.header {
+  padding: 20px;
+  /* Add other header styles here */
 }
 
 .logo {
@@ -45,24 +80,27 @@ body {
 }
 
 .logo-container div button {
-  background-color: #fff;
   border: none;
   border-bottom: 2px solid #000;
   outline: none;
   font-size: 15px;
+
   font-weight: 700;
   padding-bottom: 3px;
 }
 
 .logo-container div p {
   font-size: 14px;
-  font-weight: 400;
+  font-weight: 500;
+  color: black;
 }
 
 .logo-container div:hover button {
   color: #f86603;
   cursor: pointer;
 }
+
+/* Light Theme Styles */
 
 .nav-items {
   padding-right: 10px;
@@ -75,6 +113,7 @@ body {
 .nav-items > ul {
   font-size: 18px;
   display: flex;
+
   list-style-type: none;
   align-items: center;
 }
@@ -85,13 +124,13 @@ body {
   display: flex;
   align-items: center;
   gap: 5px;
-  color: #555;
   font-size: 17px;
+  user-select: none;
 }
 
 .nav-items ul li:hover,
 .nav-items ul li:hover .h-item {
-  color: #f86603 !important;
+  color: red !important;
   cursor: pointer;
 }
 
@@ -110,7 +149,6 @@ li > span > i {
   display: flex;
   gap: 5px;
   font-size: 17px;
-  color: #555;
   width: 100px;
 }
 
@@ -120,7 +158,6 @@ li > span > i {
 
 .nav-items > ul > li > a {
   text-decoration: none;
-  color: #555;
 }
 
 .h-cart {
@@ -265,7 +302,7 @@ li > span > i {
   cursor: pointer;
   position: relative;
   width: 230.4px;
-  height: 220px;
+  height: 200px;
   overflow: hidden;
   border-radius: 15px;
 }
@@ -280,13 +317,12 @@ li > span > i {
 
 .Food-menu .Food-item .Food-item-margin .Food-item-link .off {
   position: absolute;
-  bottom: 55px;
+  bottom: 3rem;
   max-width: calc(100% - 24px);
 }
 
 .Food-menu .Food-item .Food-item-margin .Food-item-link .off p {
   font-size: 14px;
-  line-height: 18px;
   padding: 1px 6px;
   background: brown;
   color: rgb(255, 255, 255);
@@ -310,9 +346,8 @@ li > span > i {
   font-weight: 500;
   text-align: left;
   font-size: 19px;
-  margin: 8px 0px 6px;
+  margin: 0px 0px 6px;
   max-width: 80%;
-  color: rgb(28, 28, 28);
 }
 
 .Food-menu .Food-item .Food-item-margin .Food-item-link .rating {
@@ -342,10 +377,7 @@ li > span > i {
 }
 
 .Food-menu .Food-item .Food-item-margin .Food-item-link .Category {
-  display: flex;
-  justify-content: space-between;
   font-size: 14px;
-  line-height: 17px;
 }
 
 .Food-menu .Food-item .Food-item-margin .Food-item-link .Category .p1 {
@@ -357,8 +389,7 @@ li > span > i {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  color: rgb(105, 105, 105);
-  max-width: 60%;
+  max-width: 80%;
   padding: 0px 0px 4px;
 }
 
@@ -369,14 +400,14 @@ li > span > i {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  color: rgb(105, 105, 105);
-  max-width: 30%;
-  padding: 0px 0px 4px;
+  max-width: 38%;
+  padding: 0px 0px 2px;
 }
 
 .Food-menu .Food-item .Food-item-margin .Food-item-link .time {
   display: flex;
-  justify-content: end;
+  justify-content: start;
+  margin-top: 9px;
   height: 21px;
 }
 
@@ -388,8 +419,8 @@ li > span > i {
   font-weight: 500;
   font-size: 14px;
   line-height: 16px;
-  color: rgb(54, 54, 54);
   padding: 2px 5px 3px;
+  color: black;
 }
 
 .Food-menu .Food-card {
@@ -397,14 +428,14 @@ li > span > i {
   grid-template-rows: repeat(4, auto);
   grid-template-columns: repeat(4, auto);
   column-gap: 0;
-  margin: 30px auto;
+  margin: 30px -3rem;
 }
 
-.Food-item:hover {
+/* .Food-item:hover {
   border-radius: 15px;
   box-shadow: 0px 4px 18px 0px rgba(28, 28, 28, 0.12);
   background: rgb(255, 249, 249);
-}
+} */
 
 /*Food menu*/
 

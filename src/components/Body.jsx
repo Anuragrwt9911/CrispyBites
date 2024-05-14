@@ -7,7 +7,8 @@ import OfflinePage from "./OfflinePage";
 import LocationContext from "../utils/LocationContext";
 import CityContext from "../utils/CityContext";
 import toast from "react-hot-toast";
-import noresult from "../../logos/no-results.png"
+import noresult from "../../logos/no-results.png";
+import { useSelector } from "react-redux";
 
 const Body = () => {
   const [listOfRest, setListOfRest] = useState([]);
@@ -16,6 +17,7 @@ const Body = () => {
   let [title, setTitle] = useState("");
   const { location } = useContext(LocationContext);
   const { setCity } = useContext(CityContext);
+  const theme = useSelector((store) => store.theme.isThemeToggle);
 
   useEffect(() => {
     fetchData();
@@ -103,11 +105,11 @@ const Body = () => {
   return listOfRest.length === 0 ? (
     <Shimmer />
   ) : (
-    <div className="body">
-      <div className="filter">
-        <div className="search">
+    <div className={`body ${!theme && "dark-theme"}`}>
+      <div className={`filter `}>
+        <div className={`search  ${!theme && "dark-theme"}`}>
           <input
-            className="search-box"
+            className={`search-box ${theme ? "light-theme" : "dark-theme"}`}
             type="text"
             placeholder="Search for restaurants, cuisines"
             value={searchText}
@@ -143,7 +145,7 @@ const Body = () => {
           </div>
         </div>
         <button
-          className="filter-btn"
+          className={`filter-btn`}
           onClick={() => {
             setfilteredRestaurant(listOfRest);
             toast.success("All Restaurants Displayed");

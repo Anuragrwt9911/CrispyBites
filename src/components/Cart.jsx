@@ -68,7 +68,7 @@ const Cart = () => {
             className="btn-style btn-add"
             to={"/"}
           >
-            <span>SEE RESTAURANTS NEAR YOU</span>
+            <span >SEE RESTAURANTS NEAR YOU</span>
           </Link>
     </div>
   ) : (

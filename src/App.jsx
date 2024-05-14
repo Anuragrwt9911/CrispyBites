@@ -14,6 +14,7 @@ import Cart from "./components/Cart";
 import { Toaster } from "react-hot-toast";
 import LocationContext from "./utils/LocationContext";
 import CityContext from "./utils/CityContext";
+import themeSlice from "./utils/themeSlice";
 // import Grocery from "./components/Grocery";
 
 const Grocery = lazy(() => import("./components/Grocery"));

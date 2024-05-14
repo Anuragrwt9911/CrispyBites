@@ -61,3 +61,9 @@ Explore Zaika live: [Zaika Live](https://zaika-foods.onrender.com/)
 ## Contribution
 
 Feel free to contribute to this project by opening issues or creating pull requests. Your feedback and contributions are highly appreciated!
+
+
+**Toggle theme feature in any website**
+ 1. creating context so that it will be available for all of the react components
+ 2. providing that context to all the components by wrapping all components .
+ 3. defining theme style 
